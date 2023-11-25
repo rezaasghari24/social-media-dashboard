@@ -1,0 +1,10 @@
+@import url("../sass/abstracts/_functions.scss");
+@import url("../sass/abstracts/_mixins.scss");
+@import url("../sass/abstracts/_variables.scss");
+@import url("../sass/base/_animations.scss");
+@import url("../sass/base/_base.scss");
+@import url("../sass/base/_typography.scss");
+@import url("../sass/base/_utilities.scss");
+@import url("../sass/components/_buttons.scss");
+@import url("../sass/layout/_header.scss");
+@import url("../sass/pages/_home.scss");
