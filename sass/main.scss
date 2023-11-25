@@ -1,15 +1,15 @@
-@import url('../sass/abstracts/_functions.scss');
-@import url('../sass/abstracts/_mixins.scss');
-@import url('../sass/abstracts/_variables.scss');
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables.scss";
 
 
-@import url('../sass/base/_animations.scss');
-@import url('../sass/base/_base.scss');
-@import url('../sass/base/_typography.scss');
-@import url('../sass/base/_utilities.scss');
+@import "base/animations.scss";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-@import url('../sass/components/_buttons.scss');
+@import "components/buttons";
 
-@import url('../sass/layout/_header.scss');
+@import "layout/header";
 
-@import url('../sass/pages/_home.scss');
+@import "pages/home";

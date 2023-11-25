@@ -1,10 +1,36 @@
-@import url("../sass/abstracts/_functions.scss");
-@import url("../sass/abstracts/_mixins.scss");
-@import url("../sass/abstracts/_variables.scss");
-@import url("../sass/base/_animations.scss");
-@import url("../sass/base/_base.scss");
-@import url("../sass/base/_typography.scss");
-@import url("../sass/base/_utilities.scss");
-@import url("../sass/components/_buttons.scss");
-@import url("../sass/layout/_header.scss");
-@import url("../sass/pages/_home.scss");
+:root {
+  --Lime-Green: hsl(163, 72%, 41%);
+  --Bright-Red: hsl(356, 69%, 56%);
+  --Facebook: hsl(208, 92%, 53%);
+  --Twitter: hsl(203, 89%, 53%);
+  --Instagram: linear gradient(hsl(37, 97%, 70%) to hsl(329, 70%, 58%));
+  --YouTube: hsl(348, 97%, 39%);
+  --Toggle-Dark: linear gradient(hsl(210, 78%, 56%) to hsl(146, 68%, 55%));
+  --Toggle-Light: hsl(230, 22%, 74%);
+  --VeryDarkBlue-BG: hsl(230, 17%, 14%);
+  --VeryDarkBlue-Top-BG-Pattern: hsl(232, 19%, 15%);
+  --DarkDesaturatedBlue-Card-BG: hsl(228, 28%, 20%);
+  --DesaturatedBlue-Text: hsl(228, 34%, 66%);
+  --White-Text: hsl(0, 0%, 100%);
+  --White-BG: hsl(0, 0%, 100%);
+  --VeryPaleBlue: hsl(225, 100%, 98%);
+  --LightGrayishBlue: hsl(227, 47%, 96%);
+  --DarkGrayishBlue: hsl(228, 12%, 44%);
+  --VeryDarkBlue: hsl(230, 17%, 14%); }
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1.7; }
