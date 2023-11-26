@@ -1,10 +1,13 @@
+.heading-primary {
+  color: var(--secondary-Text);
+}
 .heading-secondary {
-  color: var(--DarkGrayishBlue);
+  color: var(--secondary-Text);
   margin-bottom: 2rem;
 }
 
 .paragraph {
-  color: var(--DarkGrayishBlue);
+  color: var(--primary-Text);
   font-size: 1.4rem;
   font-weight: 700;
 }

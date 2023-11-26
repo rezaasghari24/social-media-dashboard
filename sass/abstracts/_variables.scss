@@ -25,17 +25,19 @@
 
   // Dark Theme
 
-  --VeryDarkBlue-BG: hsl(230, 17%, 14%); // BG
-  --VeryDarkBlue-Top-BG-Pattern: hsl(232, 19%, 15%); // Top BG Pattern
-  --DarkDesaturatedBlue-Card-BG: hsl(228, 28%, 20%); // Card BG
-  --DesaturatedBlue-Text: hsl(228, 34%, 66%); // Text
-  --White-Text: hsl(0, 0%, 100%); // Text
+  --BG: hsl(230, 17%, 14%); // BG
+  --Top-BG-Pattern: hsl(232, 19%, 15%); // Top BG Pattern
+  --Card-BG: hsl(228, 28%, 20%); // Card BG
+  --Card-BG-hover: hsl(228, 26%, 27%);
+  --primary-Text: hsl(228, 34%, 66%); // Text
+  --secondary-Text: hsl(0, 0%, 100%); // Text
 
   // Light Theme
 
-  --White-BG: hsl(0, 0%, 100%); // BG
-  --VeryPaleBlue: hsl(225, 100%, 98%); // Top BG Pattern
-  --LightGrayishBlue: hsl(227, 47%, 96%); // Card BG
-  --DarkGrayishBlue: hsl(228, 12%, 44%); // Text
-  --VeryDarkBlue: hsl(230, 17%, 14%); // Text
+  // --BG: hsl(0, 0%, 100%); // BG
+  // --Top-BG-Pattern: hsl(225, 100%, 98%); // Top BG Pattern
+  // --Card-BG: hsl(227, 47%, 96%); // Card BG
+  // --Card-BG-hover: hsl(232, 33%, 91%);
+  // --primary-Text: hsl(228, 12%, 44%); // Text
+  // --secondary-Text: hsl(230, 17%, 14%); // Text
 }

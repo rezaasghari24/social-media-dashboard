@@ -11,16 +11,12 @@
     hsl(146, 68%, 55%)
   );
   --Toggle-Light: hsl(230, 22%, 74%);
-  --VeryDarkBlue-BG: hsl(230, 17%, 14%);
-  --VeryDarkBlue-Top-BG-Pattern: hsl(232, 19%, 15%);
-  --DarkDesaturatedBlue-Card-BG: hsl(228, 28%, 20%);
-  --DesaturatedBlue-Text: hsl(228, 34%, 66%);
-  --White-Text: hsl(0, 0%, 100%);
-  --White-BG: hsl(0, 0%, 100%);
-  --VeryPaleBlue: hsl(225, 100%, 98%);
-  --LightGrayishBlue: hsl(227, 47%, 96%);
-  --DarkGrayishBlue: hsl(228, 12%, 44%);
-  --VeryDarkBlue: hsl(230, 17%, 14%); }
+  --BG: hsl(230, 17%, 14%);
+  --Top-BG-Pattern: hsl(232, 19%, 15%);
+  --Card-BG: hsl(228, 28%, 20%);
+  --Card-BG-hover: hsl(228, 26%, 27%);
+  --primary-Text: hsl(228, 34%, 66%);
+  --secondary-Text: hsl(0, 0%, 100%); }
 
 *,
 *::before,
@@ -41,14 +37,18 @@ body {
   min-height: 100vh;
   min-width: 100vw;
   overflow-x: hidden;
-  margin-bottom: 5vh; }
+  margin-bottom: 5vh;
+  background-color: var(--BG); }
+
+.heading-primary {
+  color: var(--secondary-Text); }
 
 .heading-secondary {
-  color: var(--DarkGrayishBlue);
+  color: var(--secondary-Text);
   margin-bottom: 2rem; }
 
 .paragraph {
-  color: var(--DarkGrayishBlue);
+  color: var(--primary-Text);
   font-size: 1.4rem;
   font-weight: 700; }
 
@@ -78,9 +78,7 @@ body {
   right: 0;
   bottom: 0;
   background-color: var(--Toggle-Light);
-  border-radius: 34px;
-  -webkit-transition: 0.4s;
-  transition: all 0.4s; }
+  border-radius: 34px; }
 
 input:checked + .slider {
   background-image: var(--Toggle-Dark); }
@@ -97,16 +95,16 @@ input:checked + .slider:before {
   width: 23px;
   left: 32px;
   bottom: 4px;
-  background-color: white;
+  background-color: var(--BG);
   border-radius: 50%;
   -webkit-transition: 0.4s;
-  transition: all 0.4s; }
+  transition: 0.4s; }
 
 input:checked + .slider::before {
-  background-color: var(--VeryDarkBlue-BG); }
+  background-color: var(--Top-BG-Pattern); }
 
 .header {
-  background-color: var(--VeryPaleBlue);
+  background-color: var(--Top-BG-Pattern);
   border-radius: 0 0 2rem 2rem; }
 
 .header-box {
@@ -132,11 +130,11 @@ main {
     justify-content: center;
     align-items: center;
     padding: 2rem 0;
-    background-color: var(--VeryPaleBlue);
+    background-color: var(--Card-BG);
     border-radius: 1rem;
     cursor: pointer; }
     .social-media__box:hover {
-      background-color: var(--LightGrayishBlue); }
+      background-color: var(--Card-BG-hover); }
     .social-media__box > :not(:last-child) {
       margin-bottom: 2rem; }
     .social-media__box--1 {
@@ -157,17 +155,18 @@ main {
     .social-media .id-box__id-name {
       font-size: 1.2rem;
       font-weight: 700;
-      color: var(--DarkGrayishBlue); }
+      color: var(--primary-Text); }
   .social-media .followers {
     display: flex;
     flex-direction: column;
     align-items: center; }
     .social-media .followers__num {
       font-size: 5rem;
-      font-weight: 700; }
+      font-weight: 700;
+      color: var(--secondary-Text); }
     .social-media .followers__tag {
       margin-top: -2rem;
-      color: var(--DarkGrayishBlue);
+      color: var(--primary-Text);
       text-transform: uppercase;
       font-size: 1.2rem;
       letter-spacing: 0.5rem; }
@@ -197,12 +196,12 @@ main {
   padding: 2rem;
   font-weight: 700;
   font-size: 1.5rem;
-  background-color: var(--VeryPaleBlue);
-  color: var(--DarkGrayishBlue);
+  background-color: var(--Card-BG);
+  color: var(--primary-Text);
   border-radius: 1rem;
   cursor: pointer; }
   .social-media-overview__box:hover {
-    background-color: var(--LightGrayishBlue); }
+    background-color: var(--Card-BG-hover); }
   .social-media-overview__box__top {
     margin-bottom: 1rem;
     display: flex;
@@ -214,7 +213,7 @@ main {
     align-items: center; }
     .social-media-overview__box__bottom .overview-num {
       flex: 1;
-      color: var(--VeryDarkBlue);
+      color: var(--secondary-Text);
       font-size: 3rem; }
     .social-media-overview__box__bottom .overview-update-box {
       display: flex;

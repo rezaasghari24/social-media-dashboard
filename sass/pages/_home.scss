@@ -13,11 +13,11 @@ main {
     justify-content: center;
     align-items: center;
     padding: 2rem 0;
-    background-color: var(--VeryPaleBlue);
+    background-color: var(--Card-BG);
     border-radius: 1rem;
     cursor: pointer;
     &:hover {
-      background-color: var(--LightGrayishBlue);
+      background-color: var(--Card-BG-hover);
     }
     & > :not(:last-child) {
       margin-bottom: 2rem;
@@ -48,7 +48,7 @@ main {
     &__id-name {
       font-size: 1.2rem;
       font-weight: 700;
-      color: var(--DarkGrayishBlue);
+      color: var(--primary-Text);
     }
   }
 
@@ -60,11 +60,12 @@ main {
     &__num {
       font-size: 5rem;
       font-weight: 700;
+      color: var(--secondary-Text);
     }
 
     &__tag {
       margin-top: -2rem;
-      color: var(--DarkGrayishBlue);
+      color: var(--primary-Text);
       text-transform: uppercase;
       font-size: 1.2rem;
       letter-spacing: 0.5rem;
@@ -103,12 +104,12 @@ main {
   padding: 2rem;
   font-weight: 700;
   font-size: 1.5rem;
-  background-color: var(--VeryPaleBlue);
-  color: var(--DarkGrayishBlue);
+  background-color: var(--Card-BG);
+  color: var(--primary-Text);
   border-radius: 1rem;
   cursor: pointer;
   &:hover {
-    background-color: var(--LightGrayishBlue);
+    background-color: var(--Card-BG-hover);
   }
   &__top {
     margin-bottom: 1rem;
@@ -125,7 +126,7 @@ main {
 
     .overview-num {
       flex: 1;
-      color: var(--VeryDarkBlue);
+      color: var(--secondary-Text);
       font-size: 3rem;
     }
     .overview-update-box {

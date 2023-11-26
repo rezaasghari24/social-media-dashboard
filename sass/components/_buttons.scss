@@ -27,8 +27,6 @@
   bottom: 0;
   background-color: var(--Toggle-Light);
   border-radius: 34px;
-  -webkit-transition: 0.4s;
-  transition: all 0.4s;
 }
 
 input:checked + .slider {
@@ -48,12 +46,12 @@ input:checked + .slider:before {
   width: 23px;
   left: 32px;
   bottom: 4px;
-  background-color: white;
+  background-color: var(--BG);
   border-radius: 50%;
   -webkit-transition: 0.4s;
-  transition: all 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider::before {
-  background-color: var(--VeryDarkBlue-BG);
+  background-color: var(--Top-BG-Pattern);
 }
