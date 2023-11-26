@@ -91,6 +91,9 @@ main {
 /* Overview Section*/
 .social-media-overview {
   margin-top: 3rem;
+  & > :first-child {
+    margin-bottom: 2rem;
+  }
 }
 .social-media-overview__boxes {
   display: grid;
@@ -163,5 +166,17 @@ main {
         color: var(--Bright-Red);
       }
     }
+  }
+}
+
+@media (max-width: 530px) {
+  main {
+    padding: 0 8rem;
+  }
+}
+
+@media (max-width: 360px) {
+  main {
+    padding: 0 4rem;
   }
 }

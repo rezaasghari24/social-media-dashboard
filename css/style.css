@@ -55,8 +55,7 @@ body {
   color: var(--secondary-Text); }
 
 .heading-secondary {
-  color: var(--secondary-Text);
-  margin-bottom: 2rem; }
+  color: var(--secondary-Text); }
 
 .paragraph {
   color: var(--primary-Text);
@@ -67,7 +66,7 @@ body {
   display: flex;
   align-items: center; }
   .toggle-box > :first-child {
-    color: var(--Toggle-Light);
+    color: var(--primary-Text);
     margin-right: 1rem; }
 
 .switch {
@@ -126,6 +125,36 @@ input:checked + .slider::before {
   height: 25vh; }
   .header-box .title-box {
     flex: 1; }
+
+@media (max-width: 730px) {
+  .header-box {
+    flex-direction: column;
+    align-items: normal;
+    height: 30vh;
+    padding-top: 2rem; }
+  .toggle-box > :first-child {
+    flex: 1; }
+  .heading-primary {
+    font-size: 2.8rem; }
+  .toggle-box {
+    position: relative; }
+    .toggle-box::before {
+      margin-top: -3rem;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: var(--primary-Text);
+      transform: translateY(-50%); } }
+
+@media (max-width: 530px) {
+  .heading-primary {
+    font-size: 2.3rem; }
+  .header-box {
+    height: 22rem;
+    padding: 1.5rem 3rem 8vh; } }
 
 main {
   margin-top: -5vh;
@@ -195,6 +224,8 @@ main {
 /* Overview Section*/
 .social-media-overview {
   margin-top: 3rem; }
+  .social-media-overview > :first-child {
+    margin-bottom: 2rem; }
 
 .social-media-overview__boxes {
   display: grid;
@@ -249,3 +280,11 @@ main {
         color: var(--Bright-Red); }
       .social-media-overview__box__bottom .overview-update-box .update-num--8 {
         color: var(--Bright-Red); }
+
+@media (max-width: 530px) {
+  main {
+    padding: 0 8rem; } }
+
+@media (max-width: 360px) {
+  main {
+    padding: 0 4rem; } }

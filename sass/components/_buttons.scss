@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   & > :first-child {
-    color: var(--Toggle-Light);
+    color: var(--primary-Text);
     margin-right: 1rem;
   }
 }
