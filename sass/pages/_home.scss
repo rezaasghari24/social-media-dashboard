@@ -4,7 +4,6 @@ main {
 }
 .social-media {
   display: grid;
-  // grid-template-rows: repeat(auto-fit, minmax(25rem, 1fr));
   grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   gap: 3rem;
 
@@ -14,9 +13,12 @@ main {
     justify-content: center;
     align-items: center;
     padding: 2rem 0;
-    background-color: var(--LightGrayishBlue);
+    background-color: var(--VeryPaleBlue);
     border-radius: 1rem;
-
+    cursor: pointer;
+    &:hover {
+      background-color: var(--LightGrayishBlue);
+    }
     & > :not(:last-child) {
       margin-bottom: 2rem;
     }
@@ -91,7 +93,6 @@ main {
 }
 .social-media-overview__boxes {
   display: grid;
-  // grid-template-rows: repeat(auto-fit, minmax(15rem, 1fr));
   grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   gap: 3rem;
 }
@@ -102,9 +103,13 @@ main {
   padding: 2rem;
   font-weight: 700;
   font-size: 1.5rem;
-  background-color: var(--LightGrayishBlue);
+  background-color: var(--VeryPaleBlue);
   color: var(--DarkGrayishBlue);
   border-radius: 1rem;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--LightGrayishBlue);
+  }
   &__top {
     margin-bottom: 1rem;
     display: flex;
