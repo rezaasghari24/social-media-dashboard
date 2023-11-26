@@ -1,15 +1,21 @@
-.header{
-    background-color: var(--VeryPaleBlue);
-    border-radius: 0 0 2rem 2rem;
+.header {
+  background-color: var(--VeryPaleBlue);
+  border-radius: 0 0 2rem 2rem;
 }
 .header-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 10rem 8rem;
-    height: 35vh;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10rem 8vh;
+  height: 25vh;
 
-    .title-box {
-        flex: 1;
+  .title-box {
+    flex: 1;
+
+    & > :last-child {
+      color: var(--DarkGrayishBlue);
+      font-size: 1.4rem;
+      font-weight: 700;
     }
+  }
 }
